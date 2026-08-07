@@ -1,0 +1,13 @@
+name: rnaseq-de
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base>=4.4
+  - bioconductor-deseq2
+  - bioconductor-apeglm
+  - r-ggplot2
+  - r-ggrepel
+  - r-pheatmap
+  - r-rcolorbrewer
+  - r-matrixstats
