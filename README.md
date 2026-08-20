@@ -19,13 +19,9 @@ and accounts for **49% of total variance** — the disease
 signal is the dominant structure in the data, not a subtle effect that needed
 teasing out.
 
-![PCA](results/figures/02_pca.png)
-
 Of 15583 genes tested, **1141** are
 differentially expressed at padj < 0.05 and |log2FC| ≥ 1
 (910 up, 231 down in COVID-19).
-
-![Volcano](results/figures/04_volcano.png)
 
 ### Strongest increases
 
@@ -70,8 +66,6 @@ IFI27 doubles as the pipeline's positive control: `run_analysis.R` asserts it is
 significantly *up* in the COVID arm and halts otherwise, so a contrast specified
 backwards cannot silently reach this README.
 
-![Top genes](results/figures/05_top_genes_heatmap.png)
-
 ## Pathway enrichment
 
 **203** of 578 tested Reactome pathways
@@ -90,8 +84,6 @@ hypergeometric test, padj < 0.05).
 | RHO GTPase Effectors | 50/261 | 2.5× | 3.9e-08 |
 | Resolution of Sister Chromatid Cohesion | 30/113 | 3.5× | 3.9e-08 |
 | Response to elevated platelet cytosolic Ca2+ | 28/101 | 3.7× | 4.5e-08 |
-
-![Enrichment](results/figures/06_reactome_enrichment.png)
 
 The enrichment splits along the same two axes as the gene-level result: cell
 cycle and chromosome-segregation terms from the plasmablast expansion, and
